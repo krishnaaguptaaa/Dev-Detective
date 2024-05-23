@@ -1,0 +1,220 @@
+*,*::after,*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Mono", monospace;
+  }
+  :root {
+    --lm-bg: #f6f8ff;
+    --lm-bg-content: #fefefe;
+    --lm-text: #4b6a9b;
+    --lm-text-alt: #2b3442;
+    --lm-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+    --lm-shadow-inactive: 0px 16px 30px -10px rgba(0, 0, 0, 0.2);
+    --lm-icon-bg: brightness(100%);
+    --btn: #0079ff;
+    --btn-hover: #60abff;
+}
+.dark-theme{
+    --lm-shadow: 0px 16px 30px -10px rgba(70,88,109,0.15);
+    --lm-bg: #141D2F;
+    --lm-bg-content: #1E2A47;
+    --lm-text: #fff;
+    --lm-text-alt: #fff;
+    --lm-icon-bg: brightness(1000%);
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 80px; */
+    /* justify-content:space-around; */
+    align-items: center;
+    background-color: var(--lm-bg);
+}
+.Dev-detective{
+    margin-top: 120px;
+    width: 527px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dark{
+    display: flex;
+    gap: 10px;
+}
+.dark p{
+    color: var(--lm-text);
+    font-size: 13px;
+    letter-spacing: 2.5px;
+    font-weight: 600;
+}
+.Dev-detective .heading{
+    color: var(--lm-text);
+    font-size: 26px;
+    font-weight: 600;
+}
+.input-container{
+    width: 527px;
+    margin-top: 40px;
+    position: relative;
+    background: var(--lm-bg-content);
+    /* height: 100%; */
+    padding: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(./Images/search-icon.svg);
+    background-repeat: no-repeat;
+    background-position-x: 20px;
+    background-position-y: center;
+    /* background-size: 20px; */
+    border-radius: 15px;
+    box-shadow: var(--lm-shadow);
+}
+#text{
+    width: 100%;
+    border: none;
+    outline: none;
+    width: 80%;
+    color: var(--lm-text);
+    padding-left: 50px;
+    background: none;
+}
+#text::placeholder {
+    color: var(--lm-text);
+    letter-spacing: -0.5px;
+    font-size: 13px;
+}
+.btn{
+    background: var(--btn);
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 16px;
+    font-weight: bold;
+    font-size: 14px;
+    min-width: 84px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    position: relative;
+}
+.git-hub-profile{
+    margin-top: 20px;
+    width: 527px;
+    border-radius: 15px;
+    padding-top: 20px;
+
+    background-color: var(--lm-bg-content);
+    border-radius: 15px;
+    box-shadow: var(--lm-shadow);
+    padding: 20px;
+    position: relative;
+}
+.prfilename{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    gap: 7px;
+}
+.user-details{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 8px;
+}
+.profileContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 18px;
+}
+.user-name-id{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.user-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--lm-text-alt);
+  }
+  
+.user-id{
+    color: var(--btn);
+  }
+  
+.user-joined-date{
+    color: var(--lm-text);
+    font-size: 12px;
+    padding: 10px 0px 0px;
+  }
+.userimage{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+}
+.userimage.active{
+    display: none;
+}
+.user-bio{
+    color: var(--lm-text-alt);
+    line-height: 25px;
+    opacity: 0.75;
+}
+
+.user-followers {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--lm-bg);
+    padding: 18px 28px;
+    border-radius: 10px;
+}
+.user-followers.active{
+    display: none;
+}
+.profile-stats{
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+    gap: 8px;
+}
+.info{
+    color: var(--lm-text);
+}
+.user-location{
+    display: flex;
+    flex-flow: row wrap;
+    color: var(--lm-text-alt);
+}
+.user-location.active{
+    display: none;
+}
+.profile-extra{
+    width: 50%;
+    display:flex;
+    gap: 14px;
+    justify-content: center;
+    align-items: center;
+}
+.profile-extra p{
+    overflow-wrap: break-word;
+    
+}
+.profile-extra a{
+    color: var(--lm-text-alt);
+    word-break: break-all;
+    text-decoration: none;
+}
+.icons{
+    width: 20px;
+    filter: var(--lm-text-alt);
+}
+.defaultImage{
+    transform: translateY(-25px);
+}
+
