@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./Images/favicon-32x32.png" type="image/x-icon">
+    <title>Dev-Detective</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Dev detective  -->
+        <div class="Dev-detective">
+            <p class="heading">DevDetective</p>
+            <div class="dark">
+                <p class="nameOftheme">Dark</p>
+                <img style="cursor: pointer;" onclick="darkthemelighttheme()" src="Images/moon-icon.svg" alt="" class="nightmode">
+            </div>
+        </div>
+        <!-- input-field  -->
+        <div class="input-container">
+            <input type="text" placeholder="Enter a Github username..." name="" id="text">
+            <button class="btn" type="submit">Search</button>
+        </div>
+        <!-- Git hub profile -->
+        <div class="git-hub-profile">
+            <div class="profileContent">
+                <div class="user-details">
+                    <img src="" alt="" class="userimage">
+                    <div class="user-name-id">
+                        <div class="prfilename">
+                            <p class="user-name"></p>
+                            <a href="" class="user-id" target="_blank"></a>
+                        </div>
+                        <p class="user-joined-date"></p>
+                    </div>
+                </div>
+                <p class="user-bio"></p>
+               <img class="defaultImage" src="" alt="">
+               
+                <div class="user-followers">
+                    <div class="profile-stats">
+                        <p class="info">Repos</p>
+                        <p class="repos info"></p>
+                    </div>
+                    <div class="profile-stats">
+                        <p class="info">Followers</p>
+                        <p class="Followers info"></p>
+                    </div>
+                    <div class="profile-stats">
+                        <p class="info">Following</p>
+                        <p class="following info"></p>
+                    </div>
+                </div>
+                <div class="user-location">
+                    <div class="profile-extra">
+                        <div class="icons">
+                            <img src="Images/location-icon.svg" alt="">
+                        </div>
+                        <p class="location"></p>
+                    </div>
+                    <div class="profile-extra">
+                        <div class="icons">
+                            <img src="Images/website-icon.svg" alt="">
+                        </div>
+                        <a target="_blank" href="" class="website"></a>
+                    </div>
+                    <div class="profile-extra">
+                        <div class="icons">
+                            <img src="Images/twitter-icon.svg" alt="">
+                        </div>
+                        <a target="_blank" href="" class="twitter"></a>
+                    </div>
+                    <div class="profile-extra">
+                        <div class="icons">
+                            <img src="Images/company-icon.svg" alt="">
+                        </div>
+                        <p class="company"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
